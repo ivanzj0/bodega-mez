@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega Mez - Vinos de Autor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button id="lang-toggle" class="lang-btn">🇺🇸 EN</button>
+
+    <nav>
+        <div class="logo">MEZ</div>
+        <ul class="nav-links">
+            <li><a href="#home" data-key="nav_home">Inicio</a></li>
+            <li><a href="#experience" data-key="nav_experience">Experiencia</a></li>
+            <li><a href="#reviews" data-key="nav_reviews">Opiniones</a></li>
+            <li><a href="#contact" data-key="nav_contact">Visítanos</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1 data-key="hero_title">Más que un Vino,<br>Una Experiencia Familiar</h1>
+            <p data-key="hero_subtitle">Descubre el encanto de Chacras de Coria. Asado, amigos y nuestro exclusivo Gran Corte.</p>
+            <a href="https://wa.me/5492616946575" class="cta-button pulse" target="_blank" data-key="hero_btn">Reservar mi Visita</a>
+        </div>
+    </header>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in" data-key="gallery_title">Momentos Únicos</h2>
+            <p class="section-subtitle fade-in" data-key="gallery_subtitle">Naturaleza, buena compañía y sabores auténticos.</p>
+            
+            <div class="gallery-grid fade-in">
+                <div class="gallery-item"><img src="botella_logo.png" alt="Vino Mez"></div>
+                <div class="gallery-item wide"><img src="mesa_asado.png" alt="El Asado"></div>
+                <div class="gallery-item"><img src="botella_jardin.png" alt="Jardín"></div>
+                <div class="gallery-item"><img src="gato_bodega.png" alt="Nuestras Mascotas"></div>
+                <div class="gallery-item wide"><img src="familia_amigos.png" alt="Amigos"></div>
+                <div class="gallery-item"><img src="paisaje.png" alt="Otoño en Mendoza"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title text-gold fade-in" data-key="reviews_title">Ellos ya lo vivieron</h2>
+            <div class="reviews-container fade-in">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Excelente vino y excelente recibimiento. Comida, servicio y ambiente de 10."</p>
+                    <div class="reviewer">
+                        <span class="name">Ivan Zirulnik</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Una experiencia sin igual. Un ambiente muy cálido y familiar. Nunca viví algo similar en Mendoza."</p>
+                    <div class="reviewer">
+                        <span class="name">Marcos Dragotto</span>
+                        <span class="badge">Local Guide</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"El vino un espectáculo. La familia te hace sentir parte y disfrutas con ellos de deliciosas comidas."</p>
+                    <div class="reviewer">
+                        <span class="name">Martina Nisnevich</span>
+                        <span class="badge">Local Guide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-layout">
+            <div class="contact-info fade-in">
+                <h2 class="section-title left-align" data-key="contact_title">Te esperamos</h2>
+                <p class="contact-desc" data-key="contact_desc">Estamos en el corazón de Chacras de Coria. Ven a conocer nuestra cava subterránea y disfruta de un día inolvidable.</p>
+                
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <p><strong>Mez Vinos de Autor</strong><br>Portal de la Cordillera 350, Chacras de Coria, Mendoza</p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <p><a href="https://wa.me/5492616946575">+54 9 2616 94-6575</a></p>
+                </div>
+                
+                <a href="https://wa.me/5492616946575" class="cta-button secondary" data-key="hero_btn">Enviar WhatsApp</a>
+            </div>
+            
+            <div class="map-container fade-in">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Mez+vinos+de+autor+Chacras+de+Coria&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Bodega Mez. Mendoza, Argentina.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

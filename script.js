@@ -16,7 +16,8 @@ const translations = {
         gallery_subtitle: "Naturaleza, buena compañía y sabores auténticos en cada estación.",
         reviews_title: "Ellos ya lo vivieron",
         contact_title: "Te esperamos",
-        contact_desc: "Estamos en el corazón de Chacras de Coria. Ven a conocer nuestra cava subterránea y disfruta de un día inolvidable.",
+        // TEXTO ACTUALIZADO AQUÍ:
+        contact_desc: "Estamos en el corazón de Chacras de Coria. Ven a disfrutar de un día inolvidable y sorpréndete con nuestro exclusivo baño inteligente japonés.",
     },
     en: {
         nav_home: "Home",
@@ -35,7 +36,8 @@ const translations = {
         gallery_subtitle: "Nature, good company, and authentic flavors in every season.",
         reviews_title: "They Lived It",
         contact_title: "We Are Waiting For You",
-        contact_desc: "We are in the heart of Chacras de Coria. Come visit our underground cellar and enjoy an unforgettable day.",
+        // TEXTO ACTUALIZADO AQUÍ (INGLÉS):
+        contact_desc: "We are in the heart of Chacras de Coria. Come enjoy an unforgettable day and be amazed by our exclusive Japanese smart toilet.",
     }
 };
 
@@ -53,7 +55,6 @@ function updateText() {
     elements.forEach(element => {
         const key = element.getAttribute('data-key');
         if (translations[currentLang][key]) {
-            // Preservar saltos de línea si existen
             element.innerText = translations[currentLang][key];
         }
     });

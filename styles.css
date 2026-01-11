@@ -308,41 +308,59 @@ nav {
 footer { text-align: center; padding: 40px 20px; color: #555; font-size: 0.9rem; }
 
 /* =========================================
-   VERSION MÓVIL (RESPONSIVE)
+   VERSION MÓVIL (RESPONSIVE) - CORREGIDO
    ========================================= */
 @media (max-width: 768px) {
     
-    /* Menú: Lo hacemos vertical y simple */
+    /* 1. MENÚ: Vertical y centrado */
     nav {
         flex-direction: column;
         padding: 10px;
     }
-    
     .nav-links {
         margin-top: 15px;
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
-    .nav-links a { font-size: 0.75rem; }
+    .nav-links a { font-size: 0.8rem; }
 
-    /* Hero: Textos más chicos */
-    .hero h1 { font-size: 2.5rem; }
-    .hero p { font-size: 1.1rem; }
+    /* 2. HERO: Textos ajustados */
+    .hero h1 { font-size: 2.5rem; padding: 0 10px; }
+    .hero p { font-size: 1.1rem; padding: 0 10px; }
     
-    /* Vinos: Uno arriba del otro y fotos más chicas */
-    .wines-container { flex-direction: column; gap: 60px; }
-    .wine-feature { order: -1; margin-bottom: 20px; } /* Foto redonda primero o al medio */
+    /* 3. VINOS: EL ARREGLO IMPORTANTE */
+    .wines-container { 
+        flex-direction: column; 
+        gap: 50px; 
+    }
     
-    .label-img { max-height: 250px; } /* Etiquetas más chicas en celular */
+    /* La foto redonda (Edición Limitada) va arriba de todo */
+    .wine-feature { 
+        order: -1; 
+        margin-bottom: 10px; 
+    } 
     
-    /* Contacto */
+    /* Contenedor de las botellas: Forzamos que estén lado a lado pero que entren */
+    .labels-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; /* Alinea las bases de las botellas */
+        gap: 10px;
+        width: 100%;
+    }
+    
+    /* Las imágenes de las etiquetas se achican si la pantalla es chica */
+    .label-img { 
+        max-width: 45%; /* Cada una ocupa un poco menos de la mitad */
+        height: auto;   /* La altura se ajusta sola */
+        max-height: 300px; /* Límite para que no sean gigantes */
+        object-fit: contain;
+    } 
+    
+    /* 4. CONTACTO Y GALERÍA */
     .contact-layout { flex-direction: column; }
-    .left-align { text-align: center; } /* Centramos textos en contacto móvil */
-    .info-item { justify-content: center; text-align: left; } /* Iconos centrados */
-
-    /* General */
+    .left-align { text-align: center; } 
+    .info-item { justify-content: center; text-align: left; }
     .section { padding: 60px 5%; }
-    .section-title { font-size: 2.2rem; }
 }
